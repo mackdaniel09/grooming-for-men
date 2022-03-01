@@ -1,6 +1,7 @@
 import React from "react";
-import "../App.css";
+import "../styles/SectionStyle.css";
 import { Link } from "react-router-dom";
+import { Fade } from "react-reveal";
 
 const SectionContainer = ({ sectionTitle, subTitle, features }) => {
   return (
@@ -14,24 +15,45 @@ const SectionContainer = ({ sectionTitle, subTitle, features }) => {
         </div>
       </div>
       <div className="container">
-        <div className="row row-cols-1 row-cols-md-2 g-4">
-          {features.map(({ image, title, button }) => {
+        <div className="row row-cols-1 row-cols-md-2 g-4 ">
+          {features.map(({ image, title, index, hasButton, button }) => {
             return (
-              <div className="col">
-                <div
-                  className="card"
-                  style={{ height: "300px", width: "600px" }}
-                >
-                  <div className="row row-cols-1 row-cols-md-2 g-4">
-                    <div className="col">
-                      <div className="card w-100 h-100">
-                        {/* <img src={image} class="card-img-top" alt={title} /> */}
-                        <h2>{title}</h2>
+              <Fade bottom big>
+                <Link className="col" key={index} to="/treatments">
+                  <div className="py-5">
+                    <div className="row">
+                      <div className="col-lg-6 mb-3 mb-lg-0">
+                        <div className="hover hover-2 text-white rounded">
+                          <img src={image} alt="" className="w-100 h-100" />
+                          <div className="hover-overlay"></div>
+                          <div className="hover-2-content px-5 py-4">
+                            <h3 className="hover-2-title text-uppercase font-weight-bold mb-0">
+                              <span className="font-weight-light">
+                                {" "}
+                                {title}
+                              </span>
+                            </h3>
+                            <div className="hover-2-description text-uppercase mb-3">
+                              {hasButton ? (
+                                <div className="d-grid gap-2 col-6 mx-auto">
+                                  <button
+                                    className="btn btn-light bg-transparent text-light"
+                                    type="button"
+                                  >
+                                    {button}
+                                  </button>
+                                </div>
+                              ) : (
+                                <div></div>
+                              )}
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </Link>
+              </Fade>
             );
           })}
         </div>

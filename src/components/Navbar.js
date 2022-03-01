@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">
+              <Link className="nav-link" aria-current="page" to="/">
                 Buy Voucher
               </Link>
             </li>
@@ -39,7 +39,7 @@ const Navbar = () => {
                 role="button"
                 data-toggle="dropdown"
                 data-hover="dropdown"
-                to="/"
+                to="/about-us"
               >
                 Our Story
               </Link>
@@ -61,7 +61,7 @@ const Navbar = () => {
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                to="/"
+                to="/treatments"
               >
                 Services
               </Link>
@@ -139,7 +139,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="#">
+              <Link className="nav-link" aria-current="page" to="#">
                 Locations
               </Link>
             </li>
@@ -153,7 +153,7 @@ const Navbar = () => {
               franchise
             </button>
             <li className="nav-item h6">
-              <Link className="nav-link text-white" to="#">
+              <Link className="nav-link text-white" to="/">
                 <FaFacebook />
               </Link>
             </li>

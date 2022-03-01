@@ -2,15 +2,21 @@ import React from "react";
 import Card from "../../CarouselCard";
 import HeroSection from "../../HeroSection";
 import SectionContainer from "../../SectionContainer";
-import { locations, products, services, signatures } from "./Data";
+import {
+  header,
+  locations,
+  products,
+  services,
+  signatures,
+} from "../data/homeData";
 
 const Home = () => {
   return (
     <div>
-      <HeroSection />
+      <HeroSection {...header} />
       <Card {...products} />
-      {/* <SectionContainer {...signatures} />
-      <SectionContainer {...services} /> */}
+      <SectionContainer {...signatures} />
+      <SectionContainer {...services} />
     </div>
   );
 };

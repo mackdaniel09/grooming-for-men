@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../App.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-const Card = ({ sectionTitle, subTitle, featuredItems }) => {
+const Card = ({ sectionTitle, subTitle, carouselItems, featuredItems }) => {
   const settings = {
     dots: true,
     infinite: false,
@@ -41,7 +41,7 @@ const Card = ({ sectionTitle, subTitle, featuredItems }) => {
   };
 
   return (
-    <div className="card">
+    <div className="card mb-5">
       <div className="container">
         <div className="card-body ">
           <div className="text-center">
@@ -49,15 +49,15 @@ const Card = ({ sectionTitle, subTitle, featuredItems }) => {
             <p className="text-uppercase">{subTitle}</p>
           </div>
         </div>
-        {/* <Slider {...settings} className="p-3">
-          {productDetails.map((item) => {
+        <Slider {...settings} className="p-3">
+          {featuredItems.map((item) => {
             return (
-              <div className="card border-0 mx-1 h-100" key={item.id}>
+              <div className="card border-0" key={item.id}>
                 <img
                   src={item.image}
-                  className="img-fluid mx-auto"
+                  className="img-thumbnail border-0"
                   alt={item.title}
-                  style={{ height: "300px", width: "300px" }}
+                  style={{ height: "300px", width: "20rem" }}
                 />
                 <div className="card-body text-center">
                   <h5 className="card-title">{item.title}</h5>
@@ -68,12 +68,7 @@ const Card = ({ sectionTitle, subTitle, featuredItems }) => {
               </div>
             );
           })}
-        </Slider> */}
-        <ul>
-          {featuredItems.map((item) => {
-            return <li key={item.id}>{item.title}</li>;
-          })}
-        </ul>
+        </Slider>
       </div>
     </div>
   );

@@ -1,11 +1,13 @@
 .nav-link {
   color: #fff;
 }
-.video {
+.video,
+.header {
   width: 100% !important;
-  height: 500px !important;
+  height: 550px !important;
   object-fit: fill;
 }
+
 img {
   object-fit: contain;
   width: 100%;
