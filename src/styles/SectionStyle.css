@@ -1,9 +1,15 @@
+img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
 .hover {
   overflow: hidden;
   position: relative;
   padding-bottom: 60%;
-  height: 400px;
-  width: 40rem;
+  height: 300px;
+  width: 30rem;
+
   cursor: pointer;
 }
 
@@ -18,7 +24,6 @@
 }
 
 .hover img {
-  min-width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -28,6 +33,7 @@
 .hover-content {
   position: relative;
   z-index: 99;
+  background-color: red;
 }
 
 /* DEMO 2 ============================== */
@@ -68,16 +74,18 @@
 .hover-2:hover .hover-overlay {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
 }
+.shadow {
+  box-shadow: 0 0.5rem 1rem #fff !important;
+}
 @media (min-width: 1200px) {
-  .hover {
-    height: 300px;
-    width: 30rem;
+  .card-img {
+    width: 450px;
   }
 }
 @media (max-width: 1200px) {
   .hover {
     height: 300px;
-    width: 30rem;
+    width: 25rem;
   }
 }
 @media (max-width: 991px) {
@@ -87,7 +95,7 @@
   }
 }
 @media (max-width: 768px) {
-  .hover {
+  .hover img {
     width: 100%;
     margin: auto;
   }

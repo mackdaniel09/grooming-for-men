@@ -96,21 +96,25 @@ export const signatures = {
       id: 1,
       image: "resources/manicure.png",
       title: "1847 signature manicure",
+      link: "/1847-signatures",
     },
     {
       id: 2,
       image: "resources/sahve.jpg",
       title: "1847 signatures shave ",
+      link: "/1847-signatures",
     },
     {
       id: 3,
       image: "resources/massage.jpg",
       title: "1847 signature muscle melt message",
+      link: "/1847-signatures",
     },
     {
       id: 4,
       image: "resources/signature.png",
       title: "discover the 1847 signatures",
+      link: "/1847-signatures",
     },
   ],
 };
@@ -126,6 +130,7 @@ export const services = {
       image: "resources/haircut.png",
       hasButton: true,
       button: "View Treatment",
+      link: "/treatments/hair-services",
     },
     {
       id: 2,
@@ -133,6 +138,7 @@ export const services = {
       image: "resources/sahve.jpg",
       hasButton: true,
       button: "View Treatment",
+      link: "/treatments/shaves",
     },
     {
       id: 3,
@@ -140,6 +146,7 @@ export const services = {
       image: "resources/manicure.png",
       hasButton: true,
       button: "View Treatment",
+      link: "/treatments/manicures-predicures",
     },
     {
       id: 4,
@@ -147,6 +154,7 @@ export const services = {
       image: "resources/massage.jpg",
       hasButton: true,
       button: "View Treatment",
+      link: "/treatments/massages",
     },
     {
       id: 5,
@@ -154,6 +162,7 @@ export const services = {
       image: "resources/facial-care.png",
       hasButton: true,
       button: "View Treatment",
+      link: "/treatments/facials",
     },
     {
       id: 6,
@@ -161,6 +170,7 @@ export const services = {
       hasButton: true,
       image: "resources/hair-removal.png",
       button: "View Treatment",
+      link: "/treatments/hair-removal",
     },
   ],
 };

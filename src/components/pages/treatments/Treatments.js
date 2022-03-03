@@ -11,7 +11,6 @@ const Treatments = () => {
     <div>
       <HeroSection {...header} />
       <SectionContainer {...services} />
-      <Container />
     </div>
   );
 };

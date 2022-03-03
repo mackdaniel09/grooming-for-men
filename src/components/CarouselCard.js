@@ -35,6 +35,7 @@ const Card = ({ sectionTitle, subTitle, carouselItems, featuredItems }) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: false,
         },
       },
     ],
@@ -49,19 +50,18 @@ const Card = ({ sectionTitle, subTitle, carouselItems, featuredItems }) => {
             <p className="text-uppercase">{subTitle}</p>
           </div>
         </div>
-        <Slider {...settings} className="p-3">
+        <Slider {...settings} className="p-5 w-100">
           {featuredItems.map((item) => {
             return (
-              <div className="card border-0" key={item.id}>
+              <div className="card carousel-card border-0 " key={item.id}>
                 <img
                   src={item.image}
-                  className="img-thumbnail border-0"
+                  className="mx-auto d-block"
                   alt={item.title}
-                  style={{ height: "300px", width: "20rem" }}
                 />
                 <div className="card-body text-center">
                   <h5 className="card-title">{item.title}</h5>
-                  <a href="#" className="btn btn-outline-dark">
+                  <a href="#" className="btn btn-outline-dark mb-5">
                     {item.price}
                   </a>
                 </div>
