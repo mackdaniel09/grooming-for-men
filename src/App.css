@@ -19,9 +19,26 @@
 }
 img {
   object-fit: cover;
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
 }
 hr {
   height: 1px !important;
+}
+.img-gallery {
+  height: 400px;
+}
+.img-gallery img {
+  height: 300px;
+}
+.img-wrapper {
+  margin: 20px;
+}
+@media (max-width: 768px) {
+  .img-gallery {
+    height: 100%;
+  }
+  .img-gallery img {
+    height: 300px;
+  }
 }

@@ -70,32 +70,38 @@ const Navbar = () => {
                 aria-labelledby="services"
               >
                 <li>
-                  <Link className="dropdown-item" to="#">
+                  <Link
+                    className="dropdown-item"
+                    to="/treatments/hair-services"
+                  >
                     Hair
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="#">
+                  <Link className="dropdown-item" to="/treatments/shaves">
                     Beard
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="#">
+                  <Link
+                    className="dropdown-item"
+                    to="/treatments/manicures-predicures"
+                  >
                     Hands & Feet
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="#">
+                  <Link className="dropdown-item" to="/treatments/massages">
                     Body & Massages
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="#">
+                  <Link className="dropdown-item" to="/treatments/facials">
                     Waxing & Hair Removal
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="#">
+                  <Link className="dropdown-item" to="/treatments/hair-removal">
                     Beard
                   </Link>
                 </li>

@@ -22,14 +22,6 @@ function App() {
               path="/treatments/hair-services"
               element={<HairServices />}
             />
-            {/* <Route path="/treatments/shaves" element={<HairServices />} />
-            <Route
-              path="/treatments/manicures-predicures"
-              element={<HairServices />}
-            />
-            <Route path="/treatments/massages" element={<HairServices />} />
-            <Route path="/treatments/facials" element={<HairServices />} />
-            <Route path="/treatments/hair-removal" element={<HairServices />} /> */}
           </Route>
           <Route path="about-us" element={<About />} />
         </Routes>

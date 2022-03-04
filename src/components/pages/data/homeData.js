@@ -5,6 +5,7 @@ export const header = {
   hasButton: true,
   button: "book treatment",
   link: "/treatments",
+  video: "/resources/header.mp4",
 };
 export const products = {
   sectionTitle: "Shop Now",

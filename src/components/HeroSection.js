@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import bgVideo from "./images/header.mp4";
+
 import { Link } from "react-router-dom";
 
 const HeroSection = ({
@@ -12,6 +12,7 @@ const HeroSection = ({
   hasButton,
   button,
   link,
+  video,
 }) => {
   return (
     <div className="card bg-dark text-white">
@@ -30,7 +31,7 @@ const HeroSection = ({
         ) : (
           <>
             <video autoPlay loop muted className="video opacity-50">
-              <source src={bgVideo} type="video/mp4" className="w-100" />
+              <source src={video} type="video/mp4" className="w-100" />
             </video>
             <div className="card-img-overlay d-flex justify-content-center align-items-center">
               <div className="container text-center">
