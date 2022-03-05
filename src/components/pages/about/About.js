@@ -1,10 +1,49 @@
 import React from "react";
-import { imageCaps, desc, living } from "../data/story";
+import Slider from "react-slick";
+import barberShop from "../../images/barberShop.png";
 import "../../../styles/AboutStyle.css";
-import { Link } from "react-router-dom";
 import "../../../App.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { imageCaps, desc, living, storyCarousel } from "../data/story";
+import { Link } from "react-router-dom";
 
 const About = () => {
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        },
+      },
+    ],
+  };
   return (
     <>
       <div className="card border-secondary">
@@ -17,6 +56,28 @@ const About = () => {
               {imageCaps.link}
             </Link>
           </button>
+        </div>
+      </div>
+      <div className="card bg-dark text-white" style={{ height: "320px" }}>
+        <img src={barberShop} className="card-img " alt="..." />
+        <div className="card-img-overlay bg-dark text-light h-75 w m-auto p-0 overflow-hidden">
+          <Slider {...settings}>
+            {storyCarousel.map((story, index) => (
+              <div
+                className="card bg-dark carousel-card-story overflow-md-auto"
+                key={index}
+              >
+                <div className="card-body h-100">
+                  <h5 className="card-title fs-md-5 fw-light h-100 lh-sm">
+                    "{story.texts}"
+                  </h5>
+                  <p className="card-text">
+                    <small>- {story.author}</small>
+                  </p>
+                </div>
+              </div>
+            ))}
+          </Slider>
         </div>
       </div>
       <div className="card bg-secondary text-light border-secondary">
@@ -34,22 +95,22 @@ const About = () => {
       </div>
       <div className="container py-3">
         <div className="row">
-          {/* {living.map((img, index) => (
-            // <div className="col col-md-3">
-            //   <div className="bg-primary mb-2">
-            //     <div className="col h-100" key={index}>
-            //       <div className="card shadow h-75">
-            //         <img src={image} className="img-thumbnail" alt="image" />
-            //       </div>
-            //     </div>
-            //   </div>
-            // </div>
-           
-          ))} */}
           {living.map((img, index) => (
-            <div>
-              <img src={img} />
-            </div>
+            <>
+              <div className="col-md-3">
+                <div className="mb-2" style={{ height: "500px" }}>
+                  <div className="col h-100" key={index}>
+                    <div className="card shadow h-100">
+                      <img
+                        src={img.img}
+                        className="img-thumbnail img-living-wrapper "
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </>
           ))}
         </div>
       </div>

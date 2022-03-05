@@ -12,6 +12,9 @@
   width: 60rem;
   object-fit: cover;
 }
+.carousel-card-story {
+  height: 200px;
+}
 .carousel-card img {
   height: 100%;
   width: 100%;
@@ -31,8 +34,9 @@ hr {
 .img-gallery img {
   height: 300px;
 }
-.img-wrapper {
-  margin: 20px;
+.img-living-wrapper {
+  height: 300px;
+  background-color: blue;
 }
 @media (max-width: 768px) {
   .img-gallery {

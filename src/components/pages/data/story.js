@@ -4,7 +4,36 @@ export const imageCaps = {
   text: "1847 is the first brand of dedicated grooming lounges for men in the Middle East that provides a unique ‘executive grooming’ experience. An award winning concept, the 1847 name originates from a turning point in the history of men’s grooming with the revolutionary discovery of the safety razor, patented by English inventor William Henson.",
   link: "view treatments",
 };
-export const storyCarousel = [];
+export const storyCarousel = [
+  {
+    texts:
+      "1847 have a longstanding reputation for being the go-to for A-listers",
+    author: "MOJEH MAN",
+  },
+  {
+    texts:
+      "The brand has been a well-preened mainstay in the region since 2004 and its flagship branch is now home to a rather more luxurious style experience",
+    author: "EMIRATES MAN",
+  },
+  {
+    texts: "1847 - Fit for Kings",
+    author: "ESQUIRE",
+  },
+  {
+    texts: "1847 - A pioneer of the men's grooming game in the region",
+    author: "CEO",
+  },
+  {
+    texts:
+      "An establisehd favorite with locals, 1847 was the first luxury lounge dedicated to men",
+    author: "CONDE NAST TRAVELLER",
+  },
+  {
+    texts:
+      "Ever felt like you need a time-out from the world and escape into a space when you could just relax? Men's grooming lounge 1847 has long been that space",
+    author: "DEBONAIR",
+  },
+];
 
 export const desc = [
   {

@@ -35,19 +35,17 @@ const Container = ({ image, info, title, subtext, text, gallery }) => {
                   </div>
                 </div>
               </div>
-              <div className="row img-gallery">
+              <div className="row ">
                 {gallery.map((item, index) => {
                   return (
-                    <div className="col col-md-3">
-                      <div className="img-wrapper">
-                        <div className="col h-100" key={index}>
-                          <div className="card shadow h-75 ">
-                            <img
-                              src={item.img}
-                              className="img-thumbnail"
-                              alt="image"
-                            />
-                          </div>
+                    <div className="col-md-4">
+                      <div className="col h-100" key={index}>
+                        <div className="card shadow h-75 ">
+                          <img
+                            src={item.img}
+                            className="img-thumbnail h-100"
+                            alt="image"
+                          />
                         </div>
                       </div>
                     </div>
