@@ -9,7 +9,3 @@ export const header = {
   button: "book treatment",
   link: "/treatments",
 };
-export const hair = {
-  image: true,
-  
-};

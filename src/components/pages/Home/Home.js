@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../../CarouselCard";
+import Container from "../../Container";
 import HeroSection from "../../HeroSection";
 import SectionContainer from "../../SectionContainer";
 import { header, products, services, signatures } from "../data/homeData";

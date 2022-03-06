@@ -80,6 +80,7 @@ const About = () => {
           </Slider>
         </div>
       </div>
+
       <div className="card bg-secondary text-light border-secondary">
         <div className="row g-0">
           {desc.map((text, index) => {

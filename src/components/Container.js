@@ -1,16 +1,14 @@
 import React from "react";
 import "../App.css";
 
-const Container = ({ image, info, title, subtext, text, gallery }) => {
+const Container = ({ image, hair, info, title, subtext, text, gallery }) => {
   return (
     <>
       <div>
         {info ? (
-          <div className="card-body ">
-            {/* <h5 className="card-title align-middle">{title}</h5>
-                <small className="text-muted">{small}</small>
-              <p className="card-text">{text}</p> */}
-          </div>
+          <>
+            <div className="container mt-5"></div>
+          </>
         ) : (
           <>
             <div className="container mt-5">
