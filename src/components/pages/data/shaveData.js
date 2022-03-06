@@ -87,5 +87,47 @@ export const shaveServices = {
         },
       ],
     },
+    {
+      id: 3,
+      image: "/resources/shave3.jpg",
+      title: "Add Ons",
+      gallery: [
+        {
+          id: 301,
+          title: "The Reviver",
+          price: "AED 60 - (15mins)",
+          subtext: "Vitamin Oil Treatment",
+          hidden:
+            "A real treat for the hair and scalp, this nourishing and strengthening treatment is applied during a therapeutic head massage to strengthen hair follicles.",
+          hiddenPrice: "AED 60",
+        },
+        {
+          id: 202,
+          title: "The Grey Express Facial",
+          price: "AED 160 - (30 mins)",
+          subtext: "Face Wash - Exfoliate - Serum - Face Cream",
+          hidden:
+            "A four-step facial that starts with a charcoal face wash to cleanse your face, followed by an award-winning exfoliate, a revolutionary hydrating serum, and a multifunctional 3-in-1 face cream infused with detoxifying and hydrating natural ingredients, that leaves you feeling utterly refreshed.",
+          hiddenPrice: "AED 160",
+        },
+        {
+          id: 203,
+          title: "Finish Haircut & Perfec Shave",
+          price: "AED 210",
+          subtext: "",
+          hidden: "Scissor Haircut and Perfect Shave",
+          hiddenPrice: "AED 210 ",
+        },
+        {
+          id: 204,
+          title: "Finish Haircut & 1847 Shave",
+          price: "AED 275",
+          subtext: "Scissor Haircut and 1847 shave",
+          hidden:
+            "Our revamped treatment starts with Murdock’s signature pre-shave oil, to soften the hair and protect the skin. A sensory experience is created by applying a citrus-scented steaming hot towel, followed by our world-class men’s shave and style. Finally, a cold scented towel is applied, followed by a post-shave balm, leaving you feeling cool and refreshed.",
+          hiddenPrice: "AED 275",
+        },
+      ],
+    },
   ],
 };
