@@ -99,7 +99,12 @@ const About = () => {
           {living.map((img, index) => (
             <>
               <div className="col-md-3">
-                <div className="mb-2" style={{ height: "500px" }}>
+                <div
+                  className="btn mb-2 "
+                  style={{ height: "500px" }}
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                >
                   <div className="col h-100" key={index}>
                     <div className="card shadow h-100">
                       <img
@@ -107,6 +112,39 @@ const About = () => {
                         className="img-thumbnail img-living-wrapper "
                         alt="image"
                       />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="modal fade"
+                id="imageModal"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">...</div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
                     </div>
                   </div>
                 </div>

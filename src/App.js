@@ -8,6 +8,7 @@ import Treatments from "./components/pages/treatments/Treatments";
 import About from "./components/pages/about/About";
 import HairServices from "./components/pages/treatments/HairServices";
 import Signatures from "./components/pages/signatures/Signatures";
+import Massages from "./components/pages/treatments/Massages";
 
 function App() {
   return (
@@ -19,8 +20,11 @@ function App() {
           <Route path="1847-signatures" element={<Signatures />} />
           <Route path="treatments" element={<Treatments />}>
             <Route path="hair-services" element={<HairServices />} />
+            <Route path="massages" element={<Massages />} />
           </Route>
-          <Route path="about-us" element={<About />} />
+          <Route path="about-us" element={<About />}>
+            <Route path=":id" />
+          </Route>
         </Routes>
         <Footer {...footerData} />
       </Router>

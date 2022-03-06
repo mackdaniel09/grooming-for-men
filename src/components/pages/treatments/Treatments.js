@@ -6,13 +6,15 @@ import SectionContainer from "../../SectionContainer";
 import { services } from "../data/homeData";
 import Container from "../../Container";
 import { hair } from "../data/treatmentData";
+import { Outlet } from "react-router-dom";
 
 const Treatments = () => {
   return (
     <div>
       <HeroSection {...header} />
       <SectionContainer {...services} />
-      {/* <Container {...hair} /> */}
+
+      <Outlet />
     </div>
   );
 };
