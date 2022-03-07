@@ -45,24 +45,31 @@ export const desc = [
 ];
 export const living = [
   {
+    id: 1,
     img: "/resources/living1.png",
   },
   {
+    id: 2,
     img: "/resources/living2.png",
   },
   {
+    id: 3,
     img: "/resources/living3.png",
   },
   {
+    id: 4,
     img: "/resources/living4.png",
   },
   {
+    id: 5,
     img: "/resources/living5.png",
   },
   {
+    id: 6,
     img: "/resources/living6.png",
   },
   {
+    id: 7,
     img: "/resources/living7.png",
   },
 ];

@@ -35,8 +35,14 @@ hr {
   height: 300px;
 }
 .img-living-wrapper {
-  height: 300px;
-  background-color: blue;
+  height: 30px;
+}
+.images-logo {
+  height: 40px;
+}
+.img-logo {
+  object-fit: cover;
+  min-width: 80px;
 }
 @media (max-width: 768px) {
   .img-gallery {
@@ -44,5 +50,11 @@ hr {
   }
   .img-gallery img {
     height: 300px;
+  }
+}
+@media (max-width: 576px) {
+  .img-logo {
+    object-fit: cover;
+    min-width: 30px;
   }
 }
