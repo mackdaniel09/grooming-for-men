@@ -4,8 +4,6 @@ import { header } from "../data/treatmentData";
 import HeroSection from "../../HeroSection";
 import SectionContainer from "../../SectionContainer";
 import { services } from "../data/homeData";
-import Container from "../../Container";
-import { hair } from "../data/treatmentData";
 import { Outlet } from "react-router-dom";
 
 const Treatments = () => {
