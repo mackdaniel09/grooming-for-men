@@ -12,7 +12,7 @@ const Navbar = () => {
           to="/"
         >
           <span className="display-3">1847</span>
-          <span className="d-none d-sm-block">Executive grooming for men</span>
+          <span className="d-none d-lg-block">Executive grooming for men</span>
         </Link>
         <button
           className="navbar-toggler"
@@ -97,12 +97,12 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/treatments/facials">
-                    Waxing & Hair Removal
+                    Face
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/treatments/hair-removal">
-                    Beard
+                    Waxing & Hair Removal
                   </Link>
                 </li>
               </ul>

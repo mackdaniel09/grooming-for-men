@@ -44,6 +44,9 @@ hr {
   object-fit: cover;
   min-width: 80px;
 }
+.img-wrapper {
+  height: 700px;
+}
 @media (max-width: 768px) {
   .img-gallery {
     height: 100%;
