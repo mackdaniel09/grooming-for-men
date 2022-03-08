@@ -7,15 +7,17 @@ import {
   massageService3,
 } from "../data/massage";
 import { headerBodyMassages } from "../data/treatmentData";
+import Face from "./Face";
 
 const Massages = () => {
   return (
     <div>
-      <h1>This is massage page</h1>
       <HeroSection {...headerBodyMassages} />
       <Container {...massageService1} />
       <Container {...massageService2} />
       <Container {...massageService3} />
+
+      <Face />
     </div>
   );
 };

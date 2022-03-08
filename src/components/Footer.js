@@ -16,9 +16,12 @@ function Footer({ sectionTitle, reviews }) {
         <div className="card-title text-center display-5">{sectionTitle}</div>
         <div className="container">
           <SliderCarousel className="b">
-            {reviews.map((review) => {
+            {reviews.map((review, index) => {
               return (
-                <div className="card carousel-card border-0 bg-dark text-light p-2">
+                <div
+                  className="card carousel-card border-0 bg-dark text-light p-2"
+                  key={index}
+                >
                   <p className="fs-4 fw-light">{review.name}</p>
                   <div className="d-flex my-3">
                     <FaStar className="mx-1" size={28} />

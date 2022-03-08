@@ -27,12 +27,12 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="1847.yougotagift" element={<Voucher />} />
             <Route path="1847-signatures" element={<Signatures />} />
-            <Route path="/treatments" element={<Treatments />} />
+            {/* <Route path="/treatments" element={<Treatments />} /> */}
             <Route
               path="/treatments/:hair-services"
               element={<HairServices />}
             />
-            <Route path="/treatments/:shaves" element={<Shaves />} />
+            {/* <Route path="/treatments/:shaves" element={<Shaves />} /> */}
             <Route
               path="/treatments/:manicures-pedicures"
               element={<HandsAndFeet />}
