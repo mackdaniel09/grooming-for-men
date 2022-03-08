@@ -53,11 +53,22 @@ export const headerBodyMassages = {
   button: "",
   link: "",
 };
-
-export const headerFace = {
+export const headerFacial = {
   image: true,
-  img: "/resources/.jpg",
-  title: "Men’s Facials",
+  img: "/resources/faceHeader.jpg",
+  title: "Men's Facial",
+  text: "Stay young with 1847’s men’s facials and beauty treatments. Our curated range of men’s beauty products will help you maintain the results at home.",
+  // secondText:
+  //   "Our signature massages for men have won multiple awards globally.",
+  hasButton: false,
+  button: "",
+  link: "",
+};
+
+export const headerWaxing = {
+  image: true,
+  img: "/resources/removal2.jpg",
+  title: "Men’s Hair Removal",
   text: "Stay young with 1847’s men’s facials and beauty treatments. Our curated range of men’s beauty products will help you maintain the results at home.",
   secondText: "",
   hasButton: false,

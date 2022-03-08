@@ -27,17 +27,17 @@ const Container = ({
                   </div>
                   <div className="col-md-6 px-2 lh-1">
                     <div className="display-5">{title}</div>
-                    {gallery.map((item) =>
-                      item.readmore ? (
-                        <div className="card-body">
-                          <div className="card-title d-md-flex justify-content-between lh-1">
-                            <p className="fw-normal">{item.title}</p>
-                            <p className="fw-lighter">{item.price}</p>
-                          </div>
-                          <p className="card-text fw-light lh-1 mb-0">
-                            {item.subtext}{" "}
-                          </p>
+                    {gallery.map((item) => (
+                      <div className="card-body">
+                        <div className="card-title d-md-flex justify-content-between lh-1">
+                          <p className="fw-normal fs-5">{item.title}</p>
+                          <p className="fw-lighter">{item.price}</p>
+                        </div>
+                        <p className="card-text fw-light lh-1 mb-1">
+                          {item.subtext}{" "}
+                        </p>
 
+                        {item.readmore && (
                           <div
                             className="accordion accordion-flush"
                             id={item.accordionParent}
@@ -48,7 +48,7 @@ const Container = ({
                                 id={item.accordionHeading}
                               >
                                 <button
-                                  className="accordion-button collapsed bg-dark text-light fs-6 fw-light  ps-0"
+                                  className="accordion-button collapsed bg-dark text-light fs-6 fw-light ps-0"
                                   type="button"
                                   data-bs-toggle="collapse"
                                   data-bs-target={`#${item.accordionCollapse}`}
@@ -64,7 +64,7 @@ const Container = ({
                                 aria-labelledby={item.accordionHeading}
                                 data-bs-parent={`#${item.accordionParent}`}
                               >
-                                <div className="accordion-body bg-dark text-light fw-light">
+                                <div className="accordion-body bg-dark text-light fw-light border border-secondary">
                                   <p>{item.hidden}</p>
                                   <p>{item.hiddenPrice}</p>
                                   <p>{item.hiddenPrice2}</p>
@@ -73,11 +73,9 @@ const Container = ({
                               </div>
                             </div>
                           </div>
-                        </div>
-                      ) : (
-                        ""
-                      )
-                    )}
+                        )}
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>

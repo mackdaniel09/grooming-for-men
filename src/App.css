@@ -1,3 +1,7 @@
+.card-header {
+  height: 300px;
+  width: 50%;
+}
 .nav-link {
   color: #fff;
 }

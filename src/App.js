@@ -12,9 +12,10 @@ import Massages from "./components/pages/treatments/Massages";
 import ImageDisplay from "./components/pages/about/ImageDisplay";
 import Voucher from "./components/pages/voucer/Voucher";
 import Locations from "./components/pages/locations/Locations";
-import Beard from "./components/pages/treatments/Beard";
+import Shaves from "./components/pages/treatments/Shaves";
 import HandsAndFeet from "./components/pages/treatments/HandsAndFeet";
 import Waxing from "./components/pages/treatments/Waxing";
+import Face from "./components/pages/treatments/Face";
 
 function App() {
   return (
@@ -31,18 +32,14 @@ function App() {
               path="/treatments/:hair-services"
               element={<HairServices />}
             />
-            <Route path="/treatments/:shaves" element={<Beard />} />
-            <Route
-              path="/treatments/:hair-services"
-              element={<HairServices />}
-            />
+            {/* <Route path="/treatments/:shaves" element={<Shaves />} /> */}
             <Route
               path="/treatments/:manicures-pedicures"
               element={<HandsAndFeet />}
             />
-            <Route path="/treatments/:massages" element={<Massages />} />
-            <Route path="/treatments/:hair-removal" element={<Waxing />} />
-            <Route path="/treatments/:massages" element={<Massages />} />
+            {/* <Route path="/treatments/:massages" element={<Massages />} /> */}
+            <Route path="/treatments/:facials" element={<Face />} />
+            {/* <Route path="/treatments/:hair-removal" element={<Waxing />} /> */}
             <Route path="about-us" element={<About />}>
               <Route path=":id" element={<ImageDisplay />} />
             </Route>

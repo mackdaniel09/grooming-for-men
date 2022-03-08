@@ -18,10 +18,10 @@ const HeroSection = ({
     <div className="card bg-dark text-white">
       <div>
         {image ? (
-          <div className="card bg-dark text-white">
+          <div className="card bg-dark text-white ">
             <img src={img} className="header card-img opacity-50" alt="..." />
-            <div className="card-img-overlay d-flex flex-column justify-content-center">
-              <div classNameName="text-light w-50">
+            <div className="card-img-overlay d-flex flex-column justify-content-center w-50">
+              <div classNameName="text-light">
                 <h5 className="card-title display-3">{title}</h5>
                 <p className="card-text fs-5">{text}</p>
                 <p className="card-text fs-5">{secondText}</p>
