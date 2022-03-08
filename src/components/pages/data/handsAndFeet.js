@@ -1,16 +1,13 @@
 export const manicureServices1 = {
   info: true,
   imgFirst: true,
-  //   image: "/resources/hair.png",
+  image: "/resources/pedicure1.jpg",
   gallery: [
     {
       id: 1,
       title: "1847 Signature Manicure",
       price: "From AED 180",
-      subtext: "",
-      accordionHeading: "signatureManicureHeading",
-      accordionParent: "signatureManicureParent",
-      accordionCollapse: "signatureManicureCollapse",
+
       readmore: true,
       hidden:
         "A signature manicure, this service provides complete hand, nail, and cuticle care, starting with applying a natural sea salt scrub mixed with a custom blend of natural oils to clear away dead skin and keep the skin feeling soft. This is then followed by a firming cure serum to combat anti-aging, a restorative and anti-aging hydro-jelly mask to nourish and rejuvenate the skin, and topped off with a forearm relaxing hand massage.",
@@ -33,7 +30,6 @@ export const manicureServices1 = {
       id: 3,
       title: "Paraffin Manicure",
       price: "From AED 210",
-      //   subtext: "Nail & Hand Cuticle Care – Moisturizing cream",
       accordionHeading: "paraffinManicureHeading",
       accordionParent: "paraffinManicureParent",
       accordionCollapse: "paraffinManicureCollapse",
@@ -54,6 +50,152 @@ export const manicureServices1 = {
       hidden:
         "Executive manicure for men followed by a herbal exfoliating mask and anti-aging paraffin treatment for extremely soft hands. Finished with a soothing forearm and hand massage.",
       hiddenPrice: "AED 210 (45 mins)",
+    },
+    {
+      id: 5,
+      title: "1847 Pedilogix™",
+      price: "From AED 230",
+      accordionHeading: "pedilogixHeading",
+      accordionParent: "pedilogixParent",
+      accordionCollapse: "pedilogixCollapse",
+      readmore: true,
+      hidden:
+        "A unique specialized pedicure that results in hydrated and softened skin. This pedicure offers foot, nail and cuticle care, followed by a foot soak that aids in balancing the skin’s PH and topped with a biotic micro algae that gently exfoliates the skin without being abrasive.",
+      hiddenPrice: "AED 230 (60 mins)",
+    },
+    {
+      id: 6,
+      title: "Executive Pedicure",
+      price: "From AED 125",
+      accordionHeading: "exePedicureHeading",
+      accordionParent: "exePedicureParent",
+      accordionCollapse: "exePedicureCollapse",
+      readmore: true,
+      hidden:
+        "An essential pedicure for men that offers complete foot, nail and cuticle care. This service is finished off with a moisturizing foot and leg cream application.",
+      hiddenPrice: "AED 125 (40 mins)",
+    },
+    {
+      id: 7,
+      title: "Paraffin Pedicure",
+      price: "From AED 225",
+      accordionHeading: "parafPedicureHeading",
+      accordionParent: "parafPedicureParent",
+      accordionCollapse: "parafPedicureCollapse",
+      readmore: true,
+      hidden:
+        "Executive pedicure followed by a herbal exfoliating mask and anti-aging paraffin treatment to revive tired feet and aching muscles, and reduce calluses.",
+      hiddenPrice: "AED 225 (45 mins)",
+    },
+  ],
+};
+export const manicureServices2 = {
+  info: true,
+  imgFirst: false,
+  title: "Combos",
+  image: "/resources/pedicure2.jpg",
+  gallery: [
+    {
+      id: 1,
+      title: "The Two Executives, Perfect Shave & Finish Haircut",
+      price: "AED 40",
+      readmore: false,
+    },
+    {
+      id: 2,
+      title: "The Two Executives & Full Body Wax",
+      price: "AED 860",
+      readmore: false,
+    },
+    {
+      id: 3,
+      title: "The Two Executives & Muscle Melt",
+      price: "AED 590",
+      readmore: false,
+    },
+    {
+      id: 4,
+      title: "Executive Manicure & Pedilogix & Detox Facial",
+      price: "AED 725",
+      readmore: false,
+    },
+    {
+      id: 5,
+      title: "Signature 1847 Manicure & Pedilogix & Finish Haircut",
+      price: "AED 535",
+      readmore: false,
+    },
+  ],
+};
+export const manicureServices3 = {
+  info: true,
+  imgFirst: true,
+  title: "Add Ons",
+  image: "/resources/pedicure3.jpg",
+  gallery: [
+    {
+      id: 1,
+      title: "Refiner",
+      price: "AED 65 - (15 mins)",
+      subtext: "Hand or Feet Exfoliation",
+      accordionHeading: "refinerHeading",
+      accordionParent: "refinerParent",
+      accordionCollapse: "refinerCollapse",
+      readmore: true,
+      hidden:
+        "Enjoy our softening and reviving hand or foot exfoliation with ‘VITAMAN’ sea salt scrub.",
+      hiddenPrice: "AED 65",
+    },
+    {
+      id: 2,
+      title: "Relaxer",
+      price: "AED 60 / AED 105 - (15 / 30 mins)",
+      subtext: "Head, Neck, and Shoulder Massage",
+      accordionHeading: "relaxerHeading",
+      accordionParent: "relaxerParent",
+      accordionCollapse: "relaxerCollapse",
+      readmore: true,
+      hidden:
+        "Relax with our signature massage in the treatment chair, performed during your hand & feet treatments.",
+      hiddenPrice: "AED 60 / AED 105",
+    },
+    {
+      id: 3,
+      title: "Remover",
+      price: "AED 60 - (10 mins)",
+      subtext: "Callus & Dry Skin Treatment",
+      accordionHeading: "removerHeading",
+      accordionParent: "removerParent",
+      accordionCollapse: "removerCollapse",
+      readmore: true,
+      hidden:
+        "Experience our effective corn and callus treatment cracks even the toughest areas of dry, rough or broken skin",
+      hiddenPrice: "AED 60",
+    },
+    {
+      id: 4,
+      title: "Reflexology",
+      price: "AED 185 / AED 255 / AED 320 - (30 / 45 / 60 mins)",
+      accordionHeading: "reflexHeading",
+      accordionParent: "reflexParent",
+      accordionCollapse: "reflexCollapse",
+      readmore: true,
+      hidden:
+        "An ancient foot massage which focuses on the pressure points relating to the various areas of the body. This traditional therapy helps ease tension, improve circulation and provide a general feeling of wellbeing.",
+      hiddenPrice: "AED 185 / AED 255 / AED 320",
+    },
+    {
+      id: 5,
+      title: "The Grey Express Facial",
+      price: "AED 160 - (30 mins)",
+      subtext: "Face Wash – Exfoliate – Serum – Face Cream",
+      accordionHeading: "greyExpressHeading",
+      accordionParent: "greyExpressParent",
+      accordionCollapse: "greyExpressCollapse",
+      readmore: true,
+      hidden:
+        "A four-step facial that starts with a charcoal face wash to cleanse your face, followed by an award-winning exfoliate, a revolutionary hydrating serum, and a multifunctional 3-in-1 face cream infused with detoxifying and hydrating natural ingredients, that leaves you feeling utterly refreshed.",
+      hiddenPrice: "AED 160",
     },
   ],
 };

@@ -123,7 +123,6 @@ export const services = {
   sectionTitle: "services",
   subTitle:
     "From barbering, manicures & pedicures, to massages, facials and waxing services, we promise exceptional attention to detail and sincere care for your wellbeing.",
-  darkBg: true,
   features: [
     {
       id: 1,
@@ -187,43 +186,72 @@ export const footerData = {
     {
       id: 1,
       name: "Kasper Kyhl",
-      image: "resources/stars.png",
       comment: "Award winning men's salon. Great staff and qaulity of services",
     },
     {
       id: 2,
       name: "Saifan Aswani",
-      image: "resources/stars.png",
       comment:
         "Wow! What an experience the elegance of the way to cut hair...friendly staff...is elegant..you go with a messy hairand come out with mashallah an elegant look",
     },
     {
       id: 3,
       name: "Geert De Pelsmaeker",
-      image: "resources/stars.png",
       comment:
         "I recommend highly this place for the very friendly welcome and the professional haircut. I look 10 years younger.",
     },
     {
       id: 4,
       name: "Saifan Aswani",
-      image: "resources/stars.png",
       comment:
         "Wow! What an experience the elegance of the way to cut hair...friendly staff...is elegant..you go with a messy hairand come out with mashallah an elegant look",
     },
     {
       id: 5,
       name: "Geert De Pelsmaeker",
-      image: "resources/stars.png",
       comment:
         "I recommend highly this place for the very friendly welcome and the professional haircut. I look 10 years younger.",
     },
     {
       id: 6,
       name: "Kifah Semaan",
-      image: "resources/stars.png",
       comment:
         "I have been a customer of 1847 for the past 10 years. The premier place for all your manly grooming needs. Jules, Dawn and Roxane are absoutely amazing!",
+    },
+    {
+      id: 7,
+      name: "Walid Abu Daher",
+      comment:
+        "Great service and friendly staff. I highly recommend their senior Barber Nidal",
+    },
+    {
+      id: 8,
+      name: "Tapendu Sarkar",
+      image: "resources/stars.png",
+      comment:
+        "Great place for mens grooming. Staff are courteuos and skilled.",
+    },
+    {
+      id: 9,
+      name: "Christopher Chaffee",
+      comment: "Great cut. Excellent service! Looking fresh for my vacation ",
+    },
+    {
+      id: 10,
+      name: "Dennis Bierman",
+      comment:
+        "Great service and overall experience . Also the optional JBR parking token is a plus.",
+    },
+    {
+      id: 11,
+      name: "Kasper Kyhl",
+      comment: "Award winning men's salon. Great staff and qaulity of services",
+    },
+    {
+      id: 12,
+      name: "Saifan Aswani",
+      comment:
+        "Wow! What an experience the elegance of the way to cut hair...friendly staff...is elegant..you go with a messy hairand come out with mashallah an elegant look",
     },
   ],
 };

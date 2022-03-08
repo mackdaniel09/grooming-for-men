@@ -85,7 +85,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     className="dropdown-item"
-                    to="/treatments/manicures-predicures"
+                    to="/treatments/manicures-pedicures"
                   >
                     Hands & Feet
                   </Link>

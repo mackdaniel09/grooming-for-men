@@ -51,6 +51,11 @@ hr {
 .img-wrapper {
   height: 700px;
 }
+.footer-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
 @media (max-width: 768px) {
   .img-gallery {
     height: 100%;

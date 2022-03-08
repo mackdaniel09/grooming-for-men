@@ -27,8 +27,8 @@ const Container = ({
                   </div>
                   <div className="col-md-6 px-2 lh-1">
                     <div className="display-5">{title}</div>
-                    {gallery.map((item) => (
-                      <div className="card-body">
+                    {gallery.map((item, index) => (
+                      <div className="card-body" key={index}>
                         <div className="card-title d-md-flex justify-content-between lh-1">
                           <p className="fw-normal fs-5">{item.title}</p>
                           <p className="fw-lighter">{item.price}</p>

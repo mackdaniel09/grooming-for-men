@@ -11,6 +11,7 @@ import { headerBodyMassages } from "../data/treatmentData";
 const Massages = () => {
   return (
     <div>
+      <h1>This is massage page</h1>
       <HeroSection {...headerBodyMassages} />
       <Container {...massageService1} />
       <Container {...massageService2} />

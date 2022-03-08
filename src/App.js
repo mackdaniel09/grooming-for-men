@@ -3,19 +3,19 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { footerData } from "./components/pages/data/homeData";
 import Home from "./components/pages/Home/Home";
-import Footer from "./components/Footer";
-import Treatments from "./components/pages/treatments/Treatments";
-import About from "./components/pages/about/About";
-import HairServices from "./components/pages/treatments/HairServices";
-import Signatures from "./components/pages/signatures/Signatures";
-import Massages from "./components/pages/treatments/Massages";
-import ImageDisplay from "./components/pages/about/ImageDisplay";
 import Voucher from "./components/pages/voucer/Voucher";
-import Locations from "./components/pages/locations/Locations";
+import Signatures from "./components/pages/signatures/Signatures";
+import Treatments from "./components/pages/treatments/Treatments";
+import HairServices from "./components/pages/treatments/HairServices";
 import Shaves from "./components/pages/treatments/Shaves";
 import HandsAndFeet from "./components/pages/treatments/HandsAndFeet";
-import Waxing from "./components/pages/treatments/Waxing";
+import Massages from "./components/pages/treatments/Massages";
 import Face from "./components/pages/treatments/Face";
+import Waxing from "./components/pages/treatments/Waxing";
+import About from "./components/pages/about/About";
+import ImageDisplay from "./components/pages/about/ImageDisplay";
+import Locations from "./components/pages/locations/Locations";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -32,20 +32,21 @@ function App() {
               path="/treatments/:hair-services"
               element={<HairServices />}
             />
-            {/* <Route path="/treatments/:shaves" element={<Shaves />} /> */}
+            <Route path="/treatments/:shaves" element={<Shaves />} />
             <Route
               path="/treatments/:manicures-pedicures"
               element={<HandsAndFeet />}
             />
-            {/* <Route path="/treatments/:massages" element={<Massages />} /> */}
+            <Route path="/treatments/:massages" element={<Massages />} />
             <Route path="/treatments/:facials" element={<Face />} />
-            {/* <Route path="/treatments/:hair-removal" element={<Waxing />} /> */}
+            <Route path="/treatments/:hair-removal" element={<Waxing />} />
             <Route path="about-us" element={<About />}>
               <Route path=":id" element={<ImageDisplay />} />
             </Route>
             <Route path="/locations" element={<Locations />} />
             <Route path="/franchise" />
           </Routes>
+
           <Footer {...footerData} />
         </>
       </Router>

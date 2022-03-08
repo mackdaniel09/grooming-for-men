@@ -1,65 +1,38 @@
 import React from "react";
-import "../App.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import { Link } from "react-router-dom";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
 import Ceo from "./images/CEO-middle-east-2.png";
 import Traveler from "./images/condenast_traveler-copy.png";
 import Gq from "./images/GQ_Magazine-01.png";
 import Esquire from "./images/esquire-copy.png";
+import SliderCarousel from "./SliderCarousel";
+import { Link } from "react-router-dom";
+import { FaFacebook, FaInstagram, FaStar } from "react-icons/fa";
+
+import "../App.css";
 
 function Footer({ sectionTitle, reviews }) {
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
   return (
     <>
       <div className="bg-dark text-light footer">
         <div className="card-title text-center display-5">{sectionTitle}</div>
-        <Slider {...settings} className="p-3">
-          {reviews.map((review) => {
-            <div className="card" key={review.id}>
-              <p className="card-text">{review.name}</p>
-              <img src={review.image} className="card-img-top" alt="..." />
-              <div className="card-body">
-                <p className="card-text">{review.comment}A</p>
-              </div>
-            </div>;
-          })}
-        </Slider>
+        <div className="container">
+          <SliderCarousel className="b">
+            {reviews.map((review) => {
+              return (
+                <div className="card carousel-card border-0 bg-dark text-light p-2">
+                  <p className="fs-4 fw-light">{review.name}</p>
+                  <div className="d-flex my-3">
+                    <FaStar className="mx-1" size={28} />
+                    <FaStar className="mx-1" size={28} />
+                    <FaStar className="mx-1" size={28} />
+                    <FaStar className="mx-1" size={28} />
+                    <FaStar className="mx-1" size={28} />
+                  </div>
+                  <p className="fs-6 fw-light">{review.comment}</p>
+                </div>
+              );
+            })}
+          </SliderCarousel>
+        </div>
         <hr />
         <div className="container">
           <div className="row text-center display-5">
@@ -68,16 +41,32 @@ function Footer({ sectionTitle, reviews }) {
           <div className="row mt-5">
             <div className="row">
               <div className="col">
-                <img src={Ceo} alt="ceo" className="w-50 h-75 mx-2 mx-auto" />
+                <img
+                  src={Ceo}
+                  alt="ceo"
+                  className="w-50 h-75 mx-2 mx-auto footer-img"
+                />
               </div>
               <div className="col">
-                <img src={Traveler} alt="ceo" className="w-50 h-50  mx-auto" />
+                <img
+                  src={Traveler}
+                  alt="ceo"
+                  className="w-50 h-50 mx-auto footer-img"
+                />
               </div>
               <div className="col">
-                <img src={Gq} alt="ceo" className="w-50 h-50  mx-auto" />
+                <img
+                  src={Gq}
+                  alt="ceo"
+                  className="w-50 h-50  mx-auto footer-img"
+                />
               </div>
               <div className="col">
-                <img src={Esquire} alt="ceo" className="w-50 h-50  mx-auto" />
+                <img
+                  src={Esquire}
+                  alt="ceo"
+                  className="w-50 h-50 mx-auto footer-img"
+                />
               </div>
             </div>
           </div>
